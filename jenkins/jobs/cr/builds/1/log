@@ -1,0 +1,25 @@
+Started by timer
+Running as SYSTEM
+Building in workspace /home/coder/project/workspace/jenkins/workspace/cr
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/aryangahlot05/Jenkins.git
+ > git init /home/coder/project/workspace/jenkins/workspace/cr # timeout=10
+Fetching upstream changes from https://github.com/aryangahlot05/Jenkins.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+ > git fetch --tags --force --progress -- https://github.com/aryangahlot05/Jenkins.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/aryangahlot05/Jenkins.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision c961925fd7b1a5d6a749e2f359dfa477fb3ae4bc (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c961925fd7b1a5d6a749e2f359dfa477fb3ae4bc # timeout=10
+Commit message: "first commit"
+First time build. Skipping changelog.
+[cr] $ /bin/sh -xe /tmp/jenkins1413085944222155769.sh
++ python3 project/cr.py
+Hii buddy
+Finished: SUCCESS
